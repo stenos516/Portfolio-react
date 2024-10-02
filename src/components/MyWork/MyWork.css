@@ -1,0 +1,60 @@
+.mywork{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.mywork-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.mywork-container img{
+   box-sizing: border-box;
+    width: 519px;
+    height: 380px;
+   border-radius: 10px;
+   transition: 0.3s;
+   cursor: pointer;
+}
+.mywork-container img:hover{
+    transform: scale(1.10);
+    border: 4px solid #ff3d97;
+transition:0.3s ;
+}
+
+.mywork-title{
+    position: relative;
+}
+.mywork h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+/* Media Queries for Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .mywork {
+        margin: 40px 20px; /* Riduci i margini per dispositivi mobili */
+        gap: 40px;
+    }
+
+    .mywork-container {
+        grid-template-columns: 1fr; /* Colonna singola per dispositivi mobili */
+        gap: 20px; /* Riduci lo spazio tra gli elementi */
+    }
+
+    .mywork-container img {
+        width: 100%; /* L'immagine occuperà l'intera larghezza disponibile */
+        height: auto; /* Altezza regolata automaticamente */
+        border-radius: 8px; /* Riduci il raggio del bordo */
+    }
+
+    .mywork h1 {
+        font-size: 40px; /* Riduci la dimensione del font */
+        padding: 0 20px; /* Riduci il padding */
+    }
+}

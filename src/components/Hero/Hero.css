@@ -1,0 +1,96 @@
+.hero{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+    gap: 35px;
+}
+.hero img{
+    margin-top: 150px;
+border-radius: 150px;
+height: 350px;
+}
+
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.hero h1 span{
+    background: rgb(61,188,255);
+    background: linear-gradient(4deg, rgba(61,188,255,1) 10%, rgba(255,208,0,1) 100%); 
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.hero-action{
+    display: flex;
+align-items: center;
+gap: 25px;
+font-size: 24px;
+font-weight: 500;
+margin-bottom: 50px;
+}
+.hero-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(4deg, rgba(61,188,255,1) 10%, rgba(255,208,0,1) 100%); 
+    cursor: pointer;
+
+}
+.hero-resume{
+    padding: 25px 45px;
+    border: solid 2px white;
+    border-radius: 50px;
+    cursor:pointer;
+}
+
+.hero-connect:hover{
+    border:solid 2px white;
+}
+.hero-resume:hover{
+    border:solid 2px #ff3d97;
+}
+
+/* Media Queries for Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero {
+        gap: 20px;
+    }
+
+    .hero img {
+        margin-top: 100px;
+        height: 200px; /* Reduce image size */
+        border-radius: 100px; /* Adjust border radius for smaller image */
+    }
+
+    .hero h1 {
+        font-size: 40px; /* Reduce font size */
+        width: 90%; /* Make text take up more space */
+    }
+
+    .hero p {
+        width: 80%; /* Make paragraph text more responsive */
+        font-size: 18px; /* Smaller font for mobile */
+        line-height: 30px;
+    }
+
+    .hero-action {
+        flex-direction: column; /* Stack the buttons vertically on mobile */
+        gap: 15px;
+        margin-bottom: 30px;
+        font-size: 20px; /* Smaller text for mobile */
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 15px 30px; /* Smaller button padding */
+        font-size: 18px;
+    }
+}

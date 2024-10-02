@@ -1,0 +1,96 @@
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 100px 220px;
+gap: 55px;
+}
+
+.skills img{
+border-radius: 20px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+}
+.skills img:hover{
+    transform: scale(1.05);
+}
+.skills h1{
+margin-top: 50px;
+}
+
+.skills2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-top: 45px;
+gap: 55px;
+}
+
+.skills2 img{
+border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    transition: 0.5s;
+}
+.skills2 img:hover{
+    transform: scale(1.05);
+}
+.skills2 h1{
+margin-top: 50px;
+}
+
+/* Media Queries per rendere il layout responsive */
+
+/* Tablet e piccoli laptop */
+@media (max-width: 1024px) {
+    .skills, .skills2 {
+   display: flex;
+   flex-direction: column; /* Dispone le immagini su 2 colonne */
+    }
+
+    .skills img, .skills2 img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Mobile grande (schermi larghi come telefoni o piccoli tablet) */
+@media (max-width: 768px) {
+    .skills, .skills2 {
+        display: flex;
+        flex-direction: column;
+
+      
+       align-items: center;
+        margin: 30px 50px;
+        gap: 30px;
+    }
+
+    .skills img, .skills2 img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Mobile piccolo (telefoni) */
+@media (max-width: 480px) {
+    .skills, .skills2 {
+        margin: 20px 20px;
+        gap: 20px;
+    }
+
+    .skills img, .skills2 img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skills h1, .skills2 h1 {
+        font-size: 24px;
+    }
+}
