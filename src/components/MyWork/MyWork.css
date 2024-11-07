@@ -58,3 +58,37 @@ transition:0.3s ;
         padding: 0 20px; /* Riduci il padding */
     }
 }
+
+.project-btn{
+    margin-top: 20px;
+    margin: 20px;
+    border:none;
+    color: white;
+    background: rgb(61,188,255);
+    background: linear-gradient(4deg, rgba(61,188,255,1) 10%, rgba(255,208,0,1) 100%); 
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 30px;
+    padding: 15px 20px;
+}
+.project-btn:hover{
+    transform: scale(1.05);
+    }
+
+    .git-btn {
+        margin-top: 20px;
+    margin: 20px;
+    border:none;
+    color: white;
+    background: rgb(61,188,255);
+    background: linear-gradient(4deg, rgb(3, 45, 68) 10%, rgb(0, 21, 255) 100%); 
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 30px;
+    padding: 15px 20px;
+      }
+      .git-btn:hover{
+        transform: scale(1.05);
+        }

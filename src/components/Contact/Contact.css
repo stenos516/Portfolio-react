@@ -108,17 +108,20 @@ background-color: none;
             font-size: 16px;
           }
 
-          /* Media Queries for Mobile (max-width: 768px) */
+ /* Media Queries for Mobile (max-width: 768px) */
 @media (max-width: 768px) {
     .contact {
         grid-template-columns: 1fr; /* Colonna singola per dispositivi mobili */
         margin: 40px 20px; /* Riduci i margini per dispositivi mobili */
         gap: 40px; /* Riduci lo spazio tra gli elementi */
+        text-align: center; /* Allinea gli elementi al centro */
     }
 
     .contact img {
         width: 80px; /* Riduci la dimensione dell'immagine */
         height: 80px;
+        margin: 20px 0px auto; /* Allinea l'immagine al centro */
+        
     }
 
     .contact-right input, .contact-right textarea {
@@ -135,4 +138,3 @@ background-color: none;
         font-size: 28px; /* Riduci la dimensione del font del titolo */
     }
 }
-          

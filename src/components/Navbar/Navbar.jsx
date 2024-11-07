@@ -3,7 +3,7 @@ import './Navbar.css'
 import logo2 from '../../assets/logo2.png'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import menu_open from '../../assets/menu.png'
-import menu_close from '../../assets/close.png'
+import menu_close from '../../assets/close30.png'
 const Navbar = () => {
   const [isMenuOpen, SetIsMenuOpen] = useState(false);
 
@@ -16,7 +16,7 @@ const Navbar = () => {
   
   return (
     <div className='navbar'>
-      <img src={logo2} alt=''></img>
+      <img src={logo2} className='logo2' alt=''></img>
 
       <img src={isMenuOpen ? menu_close : menu_open} alt='Menu' className='nav-mob-icon'
       onClick={toggleMenu}></img>

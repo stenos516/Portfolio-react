@@ -6,7 +6,7 @@
 
 }
 .navbar img{
-    height: 250px;
+    height: 100px;
  
     cursor: pointer;
     transition: 0.5s;
@@ -72,13 +72,19 @@ transform: scale(1.05);
 @media (max-width: 768px) {
     .nav-mob-icon {
         display: block;
-        width: 100px;
+    
+        width: 64px;
+        position: absolute; 
+        background: none;
+        /*   
+        right: 20px; 
+        z-index: 20; */
     }
 
     .nav-menu {
         display: none;
         position: fixed;
-        top: 0px;
+     top:10px;
         right: 0;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.9); /* Nero con trasparenza al 70% */
@@ -98,8 +104,11 @@ transform: scale(1.05);
         display: none;
     }
 
-    .navbar img {
+    .navbar img.logo2 {
         height: 150px;
+        position: absolute;
+        left: 20px; 
+        top: 10px; 
+        border-radius: 100px;
     }
-    
 }

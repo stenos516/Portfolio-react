@@ -14,3 +14,15 @@
     font-size: 80px;
     font-weight: 600;
 }
+/* Mobile Styles */
+@media (max-width: 768px) {
+   .about {
+       margin: 40px 20px; /* Riduci i margini per adattarli a schermi piccoli */
+       gap: 40px; /* Riduci il gap tra gli elementi */
+   }
+
+   .about h1 {
+       font-size: 40px; /* Riduci la dimensione del testo */
+       padding: 0 10px; /* Riduci il padding orizzontale */
+   }
+}
